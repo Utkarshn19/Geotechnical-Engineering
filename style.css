@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+nav{
+    background-color: #6b3260;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.navcont{
+    max-width: 80vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* overflow: hidden; */
+}
+nav .logo img{
+    height: 50px;
+    padding: 5px 10px;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    
+}
+nav .logo .insti .dept{
+    text-align: center;
+    
+}
+nav .logo .insti .dept a{
+    border-bottom:2px solid #17a2b8;
+    color: white;
+    text-decoration: none;
+}
+nav .logo .insti .insti_name{
+    color: #ffff00;
+    padding-top: 4px;
+}
+.exp{
+    display: flex;
+    align-items: center;
+}
+.exp .home{
+    text-decoration: none;
+    color: white;
+    padding: 21px;
+    font-family: Open Sans, Arial, sans-serif;
+    font-size: 14px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+.dropbtn {
+    color: white;
+    background-color: inherit;
+    border: none;
+    padding: 25px 0px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    font-family: Open Sans, Arial, sans-serif;
+}
+.dropbtn .icon-chevron-bottom{
+    height: 17px;
+    padding-left: 3px;
+    fill: white;
+    
+}
+.drop-cont{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #ffffffed;
+    width: 250px;
+    padding: 10px 0px;
+    border-top: 3px solid #4b203b;
+    align-items: center;
+    justify-content: center;
+}
+.drop-cont a{
+    color: #5a5959;
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+    font-family: Open Sans, Arial, sans-serif;
+    padding: 15px;
+}
+.dropdown:hover .drop-cont{
+    display: block;
+    position: absolute;
+    right: 0%;    
+    animation: fade ease 0.3s;
+}
+.dropdown:hover .dropbtn{
+    color: rgb(227, 227, 227);
+}
+.drop-cont a:hover {
+    background-color: rgb(244, 244, 244);
+    color: #484747;
+}
+.dropdown:hover .dropbtn .icon-chevron-bottom{
+    fill:rgb(227, 227, 227) ;
+}
+main{
+    /* background-color: #3065e09b; */
+    background-image: linear-gradient(-230deg,rgba(100, 148, 220, 0.649),rgba(216, 225, 243, 0.808));
+    box-shadow:0px 0px 10px black  ;
+
+}
+main{
+    /* background-color: #3065e09b; */
+    background-image: linear-gradient(-230deg,rgba(100, 148, 220, 0.649),rgba(216, 225, 243, 0.808));
+    box-shadow:0px 0px 10px black  ;
+    position: relative;
+    z-index: -4;
+
+}
+main .pictures{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    height: 70vh;
+    background-image: url(images/Laboratory_Testing_-_Geotechpedia.webp);
+    /* background-color: aliceblue; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+main .blackbox{
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+main .toptext{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    opacity: 2;
+    font-size: 40px;
+    position: relative;
+    font-weight: 600;
+    color:  white;
+}
+.about {
+    padding: 20px;
+}
+main .about{
+    max-width: 70vw;
+    margin: auto;
+    box-shadow: initial;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about p{
+    font-size: larger;
+    font-weight: 500;
+    padding: 18px 0 10px 0;
+}
+.about .info{
+    padding-top: 10px;
+    font-size: medium;
+    color: #666;
+}
+.about ul{
+    padding: 8px 20px;
+}
+footer .footup{
+    display: flex;
+    /* height: 200%; */
+}
+.foot_logo{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    align-items: center;
+    background-color: #6b3260;
+    /* background-image: linear-gradient(to right,#6b3260,#fffeff); */
+
+}
+.foot-right{
+    width: 65%;
+    padding-left: 35px;
+    color: #666;
+    font-family:Open Sans, Arial, sans-serif; 
+    font-size: 15px;
+}
+.foot-right .reach{
+    font-family:Open Sans, Arial, sans-serif; 
+    margin-top: 28px ;
+    font-size: 21px;
+    color: black;
+    /* margin-left: 30px; */
+    text-decoration: underline 2px solid #6f4566 ;
+    text-underline-offset: 7px;
+}
+.foot-right .prof{
+    margin: 25px 0 0 0;
+}
+.foot-right .location{
+    margin: 20px 0 0 0;
+    display: flex;
+}
+.foot-right .location img{
+    height: 30px;
+    fill: #4b203b;
+    margin-right: 5px;
+}
+.foot-right .email{
+    display: flex;
+    align-items: center;
+    
+    margin: 20px 0 0 0;
+
+}
+.foot-right .email-icon img{
+    height: 27px;
+    margin-right: 10px;
+}
+.foot-right .social-m{
+    margin: 20px 0 0 0;
+    
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+}
+.foot-right .social-m a{
+    width: 29.8px;
+}
+.foot-right .social-m svg{
+    height: 25px;
+    margin: 10px 0 30px 0;
+    fill: #4b203b;
+}
+.foot-right .social-m img{
+    height: 28px;
+    margin: 10px 0 30px 17px;
+}
+.foot-right .social-m .insta{
+    height: 25px;
+    margin-left: 35px;
+}
+.foot-right .social-m .linked{
+    height: 30px;
+    margin-left: 45px;
+}
+.footdown{
+    width: 100%;
+    box-shadow:0px 0px 10px black  ;
+    background-color: black;
+}
+.footdown .copy{
+    color: #848484;
+    font-family:Open Sans, Arial, sans-serif; 
+    font-size: 10px;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+@media only screen and (max-width: 500px) {
+    main .about{
+        max-width: 100vw;
+    }
+    .foot_logo img{
+        width: 100px;
+    }
+    .navcont{
+        max-width: 100vw;
+    }
+    .insti{
+        font-size: small;
+    }
+    .logo img{
+        height: 0px;
+    }
+    .dept{
+        display: none;
+    }
+    .insti_name{
+        display: none;
+    }
+    .foot_logo{
+        display: none;
+    }
+    main .pictures{
+        height: 50vh;
+    }
+}
+
